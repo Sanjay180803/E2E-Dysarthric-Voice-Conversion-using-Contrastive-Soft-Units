@@ -1,0 +1,25 @@
+installation instruction for Fairseq:
+python3.9 -m venv fs_env
+source fs_env/bin/activate
+pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+pip install wheel
+pip install soundfile
+pip install editdistance
+pip install pyarrow
+pip install tensorboard
+pip install tensorboardX
+
+# dowmload fairseq0.12.2 unzip and cd into it
+pip install --editable ./
+cd ..
+
+pip install flashlight-text
+pip install git+https://github.com/kpu/kenlm.git
+git clone https://github.com/flashlight/sequence && cd sequence
+pip install .
+cd ..
+
+pip install Flask==3.0.0
+pip install gunicorn==21.2.0
+pip install librosa==0.10.1
+pip install webvtt-py==0.4.6
