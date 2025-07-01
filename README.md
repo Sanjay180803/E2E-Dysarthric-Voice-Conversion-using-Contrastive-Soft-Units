@@ -198,5 +198,5 @@ print(f"Conversion time: {result['processing_time']['total']:.2f}s")
 
 This implementation builds upon:
 - **[Fairseq Speech2Unit](https://github.com/facebookresearch/fairseq/tree/main/examples/textless_nlp/gslm/speech2unit)** by Meta AI
-- **[mHuBERT](https://huggingface.co/facebook/mhubert-base)** multilingual speech representations
+- **[mHuBERT-147](https://huggingface.co/utter-project/mHuBERT-147)** multilingual speech representations
 - **[HiFi-GAN](https://github.com/jik876/hifi-gan)** high-fidelity neural vocoder
