@@ -112,7 +112,7 @@ python training/train_soft_encoder.py
 
 ### Step 3: Train S2UT Model (Core Component)
 
-Recommended: Before proceeding with the implementation below, we suggest following the instructions in https://github.com/facebookresearch/fairseq/blob/main/examples/speech_to_speech/docs/direct_s2st_discrete_units.md, as our approach is inspired by their methodology.
+Before proceeding with the implementation below, we suggest following the instructions in https://github.com/facebookresearch/fairseq/blob/main/examples/speech_to_speech/docs/direct_s2st_discrete_units.md, as our approach is inspired by their methodology.
 
 Train the dysarthric-to-healthy conversion model:
 
@@ -132,7 +132,7 @@ python training/train_s2ut.py
 ### Step 4: Train HiFi-GAN Vocoder
 
 
-Recommended: Before proceeding with the implementation below, we suggest following the instructions in https://github.com/bshall/hifigan, as our approach is inspired by their methodology.
+Before proceeding with the implementation below, we suggest following the instructions in https://github.com/bshall/hifigan, as our approach is inspired by their methodology.
 
 Synthesize waveforms from soft units:
 
@@ -199,4 +199,5 @@ print(f"Conversion time: {result['processing_time']['total']:.2f}s")
 This implementation builds upon:
 - **[Fairseq Speech2Unit](https://github.com/facebookresearch/fairseq/tree/main/examples/textless_nlp/gslm/speech2unit)** by Meta AI
 - **[mHuBERT-147](https://huggingface.co/utter-project/mHuBERT-147)** multilingual speech representations
+- **[Soft-VC](https://github.com/bshall/soft-vc)** Soft Speech Units for Improved Voice Conversion
 - **[HiFi-GAN](https://github.com/jik876/hifi-gan)** high-fidelity neural vocoder
